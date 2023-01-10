@@ -1,0 +1,22 @@
+﻿<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+    @*<h3 class="display-4">Grato pelo seu contato</h3>
+    
+      <p>Vou responder sua mensagem o mais brever possível.</p>  *@
+        @if (TempData["MensagemSucesso"] != null)
+        {
+            <div class="alert alert-success" role="alert">
+                @TempData["MensagemSucesso"] <button type="button" class="btn btn-danger btn-sm close-alert" data-bs-dismiss="alert" aria-label="Close">X</button>
+            </div>
+        }
+      <hr class="my-4">
+      <p class="lead">
+       <div><a asp-action="Index" asp-controller="Home" class="btn btn-primary">Retornar</a></div>
+     </p>
+  </div>
+</div>
